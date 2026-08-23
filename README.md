@@ -19,13 +19,14 @@ package main
 
 import (
 	"solod.dev/so/fmt"
+	"solod.dev/so/os"
 	"solod.dev/sodium/libsodium"
 )
 
 func main() {
 	if libsodium.Init() < 0 {
 		fmt.Println("libsodium could not be initialized")
-		return
+		os.Exit(1)
 	}
 	fmt.Println("libsodium is ready")
 }
