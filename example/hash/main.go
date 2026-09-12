@@ -2,6 +2,7 @@
 //
 // Usage:
 //
+//	make example name=hash
 //	./build/hash 'Hello, World!'
 package main
 
